@@ -80,8 +80,8 @@ body {
     --text-1: oklch(92.346% 0.00214 14.495); /* other normally white text */
     --text-2: oklch(85% 0 0); /* headings and important text */
     --text-3: oklch(90.881% 0.01218 96.486); /* normal text */
-    --text-4: oklch(78.577% 0.00009 271.152 / 0.815); /* icon buttons and channels */
-    --text-5: oklch(82.032% 0.00009 271.152 / 0.884); /* muted channels/chats and timestamps */
+    --text-4: oklch(86.995% 0.0001 271.152); /* icon buttons and channels */
+    --text-5: oklch(86.995% 0.0001 271.152 / 0.781); /* muted channels/chats and timestamps */
 
     /* background and dark colors */
     --bg-1: oklch(31% 0 0 / 0.65);
