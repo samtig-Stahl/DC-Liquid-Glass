@@ -160,7 +160,27 @@ body {
     --purple-4: oklch(42.506% 0.00663 17.018);
     --purple-5: oklch(86.28% 0.14679 204.117);
 
+.a2f5142ba8328dfd-content::before {
+    content:
+"____            _                   _________   \A\
+/ ___| _   _ ___| |_ ___ _ __ ___   |___ /___ \\  \A\
+\\___ \\| | | / __| __/ _ \\ '_ ` _ \\    |_ \\ __) | \A\
+ ___) | |_| \\__ \\ ||  __/ | | | | |  ___) / __/  \A\
+|____/ \\__, |___/\\__\\___|_| |_| |_| |____/_____| \A\
+       |___/                                        \A\
+             From samtig_Stahl                        ";
 
+    white-space: pre;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+    letter-spacing: 0 !important;
+    word-spacing: 0 !important;
+
+    transform: none !important;
+    font-variant-ligatures: none;
+
+    line-height: 1;
+}
 
 
      --avatar-border: 1px solid var(--neon-red-color); /* Border of avatar */
@@ -284,27 +304,7 @@ div.cf48127484dbde85-text-sm\/medium {
     color: oklch(90.881% 0.01218 96.486) !important;
 }
 
-.a2f5142ba8328dfd-content::before {
-    content:
-"____            _                   _________   \A\
-/ ___| _   _ ___| |_ ___ _ __ ___   |___ /___ \\  \A\
-\\___ \\| | | / __| __/ _ \\ '_ ` _ \\    |_ \\ __) | \A\
- ___) | |_| \\__ \\ ||  __/ | | | | |  ___) / __/  \A\
-|____/ \\__, |___/\\__\\___|_| |_| |_| |____/_____| \A\
-       |___/                                        \A\
-             From samtig_Stahl                        ";
 
-    white-space: pre;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-
-    letter-spacing: 0 !important;
-    word-spacing: 0 !important;
-
-    transform: none !important;
-    font-variant-ligatures: none;
-
-    line-height: 1;
-}
 
 
 
