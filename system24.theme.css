@@ -202,30 +202,6 @@ body {
     background-clip: padding-box;
 }
 
-/* Grundzustand */
-.wrapper-1_HaEi {
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease,
-        filter 0.25s ease;
-}
-
-/* Grundzustand: alle Server-Icons */
-.cc5dd25190031396-wrapper {
-    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
-    will-change: transform;
-}
-
-/* Hover-Effekt: vergrößern, leicht verschieben, roter Glow */
-.cc5dd25190031396-wrapper:hover {
-    transform: translateX(3px) scale(1.08);
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0);
-    filter: brightness(1.15);
-}
-
-/* Optional: pulsierender Glow beim Hover */
-
-
 .cc5dd25190031396-wrapper:hover {
     animation: serverPulse 1.2s infinite ease-in-out;
 }
