@@ -1,6 +1,6 @@
 /* import theme modules */
 @import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/1.css');
-
+@import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/search.css');
 body {
     /* font, change to '' for default discord font */
     --font: 'DM Mono'; /* change to '' for default discord font */
