@@ -164,7 +164,7 @@ body {
 /* === ALLES ÖFFNENDE IMMER OPAK === */
 [class*="settings"],
 [class*="modal"],
-[class*="cf48127484dbde85-text-md/semibold"][class*="c6e099f3aa7c1767-header"],
+
 [class*="container"][class*="floating"],
 [class*="popout"],
 [class*="menu"],
@@ -222,12 +222,19 @@ div.cf48127484dbde85-text-sm\/medium {
 }
 
 /* Text im Live-Qualitäts-Indikator weiß machen */
-._cf48127484dbde85-text-md/semibold c6e099f3aa7c1767-header,
-._30845ecfafc292c8-qualityIndicator,
-._30845ecfafc292c8-qualityResolution {
+[class*="cf48127484dbde85-text-md/semibold"][class*="c6e099f3aa7c1767-header"],
+/* 2. Korrigierte Klassen-Schreibweise (Punkt davor, Schrägstrich maskiert) */
+.cf48127484dbde85-text-md\/semibold.c6e099f3aa7c1767-header,
+/* 3. Die restlichen Indikatoren */
+[class*="qualityIndicator"],
+[class*="qualityResolution"] {
     color: oklch(90.881% 0.01218 96.486) !important;
 }
 
+/* Der Fix gegen den "Geister-Kasten" beim schnellen Bewegen */
+[class*="cf48127484dbde85-text-md/semibold"]:empty {
+    display: none !important;
+}
 
 @import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/startup.css');
 
