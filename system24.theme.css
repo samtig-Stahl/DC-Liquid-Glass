@@ -201,8 +201,8 @@ body {
 }
 
 
-[class*="theme-dark theme-darker images-dark _59d0d7075b521375-layer"],
-/*[class*="_13533e3c5791980f-autocompleteInner d1405bf11dcfb07a-wrapper"],*/
+
+[class*="_13533e3c5791980f-autocompleteInner d1405bf11dcfb07a-wrapper"],
 [class*="_13533e3c5791980f-autocomplete d1405bf11dcfb07a-outerWrapper"],
 [class*="_13533e3c5791980f-autocompleteInner _6b0e07cbaf13ec4e-autocompleteInner"],
 [class*="_6131ab3dbe0affed-scroller d125d22cdfd32cfe-auto d125d22cdfd32cfe-scrollerBase"]
@@ -230,14 +230,7 @@ div.cf48127484dbde85-text-sm\/medium {
 [class*="qualityResolution"] {
     color: oklch(90.881% 0.01218 96.486) !important;
 }
-/* Trenne die Klassen am Anfang auf oder nutze nur den Layer-Teil */
-[class*="_59d0d7075b521375-layer"]:empty,
-[class*="cf48127484dbde85-text-md/semibold"]:empty {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
-}
+
 
 @import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/startup.css');
 
