@@ -220,31 +220,6 @@ body {
 }
 
 
-
-
-
-
-
-/* Ganze Scrollbar */
-::-webkit-scrollbar {
-    width: 12px;   /* vertikal */
-    height: 12px;  /* horizontal */
-}
-
-
-/* Hover-Effekt */
-::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(143, 143, 143, 0.628);
-}
-
-
-[class*="cf48127484dbde85-text-md/semibold"]{
-    color: rgb(255, 255, 255);
-
-}
-
-
-
 /* Nur "Bildschirm teilen" rot färben */
 div.cf48127484dbde85-text-sm\/medium {
     color: oklch(90.881% 0.01218 96.486) !important;
