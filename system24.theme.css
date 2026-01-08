@@ -302,37 +302,5 @@ div.cf48127484dbde85-text-sm\/medium {
 
 
 
-/* Haupt-Hintergrund des Popouts komplett durchsichtig */
-/* Haupt-Hintergrund des Popouts komplett durchsichtig */
-/* Haupt-Hintergrund des Popouts komplett durchsichtig */
-[data-popout-root="true"],
-[data-popout-root="true"] .platform-win,
-[data-popout-root="true"] [class*="visual-refresh"] {
-    background: transparent !important;
-    background-color: transparent !important;
-}
-
-/* Den inneren Container des Popouts (wo das Video drin ist) */
-[data-popout-root="true"] [class*="popout-"],
-[data-popout-root="true"] [class*="container-"] {
-    background: transparent !important;
-    background-color: transparent !important;
-}
-
-/* Verhindert, dass die Titelleiste (Close, Minimize Buttons) einen Hintergrund hat */
-[data-popout-root="true"] [class*="refresh-title-bar"] {
-    background: transparent !important;
-}
-
-/* WICHTIG: Damit die Buttons und Anzeigen weiterhin sichtbar bleiben, 
-   geben wir ihnen einen leichten Schatten oder lassen sie unverändert */
-[data-popout-root="true"] [class*="button"],
-[data-popout-root="true"] [class*="control-"] {
-    opacity: 1 !important; /* Buttons bleiben voll sichtbar */
-}
-
-
-
-
 
 
