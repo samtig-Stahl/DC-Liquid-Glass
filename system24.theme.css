@@ -1,17 +1,13 @@
 /**
- * @name system24
+ * @name system32
  * @description a tui-style discord theme.
  * @author refact0r
  * @version 2.0.0
- * @invite nz87hXyvcy
- * @website https://github.com/refact0r/system24
- * @source https://github.com/refact0r/system24/blob/master/theme/system24.theme.css
- * @authorId 508863359777505290
- * @authorLink https://www.refact0r.dev
+
 */
 
 /* import theme modules */
-@import url('http://127.0.0.1:4545/src/1.css');
+@import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/1.css');
 
 body {
     /* font, change to '' for default discord font */
@@ -54,7 +50,7 @@ body {
 
     /* background image options */
     --background-image: on; /* off: no background image, on: enable background image (must set url variable below) */
-    --background-image-url: url('http://127.0.0.1:4545/src/back.png');
+    --background-image-url: url('https://github.com/samtig-Stahl/DC-Liquid-Glass/blob/main/back.png?raw=true');
  /* url of the background image */
 
     /* transparency/blur options */
@@ -103,7 +99,7 @@ body {
     --bg-2: oklch(27% 0 0 / 0.60);
     --bg-3: oklch(23% 0 0 / 0.55);
     --bg-4: oklch(19% 0 0 / 0.50);
-    --hover: oklch(96.489% 0.05789 95.63 / 0.1); /* channels and buttons when hovered */
+    --hover: oklch(64.673% 0.00007 271.152 / 0.064); /* channels and buttons when hovered */
     --active: oklch(54% 0 0 / 0.2); /* channels and buttons when clicked or selected */
     --active-2: oklch(54% 0 0 / 0.3); /* extra state for transparent buttons */
     --message-hover: var(--hover); /* messages when hovered */
@@ -135,7 +131,7 @@ body {
 
     /* base colors */
     --red-1: oklch(60.669% 0.03586 226.822);
-    --red-2: rgb(193, 58, 58);
+    --red-2: rgb(226, 24, 24);
     --red-3: oklch(46.916% 0.18154 27.995);
     --red-4: oklch(51.117% 0.20977 29.223);
     --red-5: oklch(63.042% 0.25201 14.272);
@@ -195,7 +191,7 @@ body {
 [class*="picker"],
 [class*="settings"],
 [class*="content"][class*="thin"] {
-    background-color: oklch(18.22% 0.00002 271.152) !important;
+    background-color: oklch(26.862% 0.00003 271.152) !important;
     backdrop-filter: none !important;
 }
 
@@ -204,14 +200,18 @@ body {
 [class*="videoGrid"],
 [class*="root"]
 {
-    background-color: oklch(100% 0.00011 271.152 / 0);
-    opacity: 0,9;
+    background-color: oklch(26.862% 0.00003 271.152 / 0);
+
 
 }
 
+._927fca0ac7164d54-container{
+    background-color: oklch(26.862% 0.00003 271.152);
 
+    background-clip: padding-box;
+}
 ._629e4c86564a4ee7-scroller::-webkit-scrollbar-thumb {
-    background-color: #707070;
+    background-color: oklch(26.862% 0.00003 271.152);
 
     background-clip: padding-box;
 }
@@ -232,18 +232,62 @@ body {
 
 /* Hover-Effekt: vergrößern, leicht verschieben, roter Glow */
 .cc5dd25190031396-wrapper:hover {
-    transform: translateX(6px) scale(1.08);
-    box-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
+    transform: translateX(3px) scale(1.08);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0);
     filter: brightness(1.15);
 }
 
 /* Optional: pulsierender Glow beim Hover */
-@keyframes serverPulse {
-    0%   { box-shadow: 0 0 6px rgba(255, 0, 0, 0.4); }
-    50%  { box-shadow: 0 0 14px rgba(255, 0, 0, 0.8); }
-    100% { box-shadow: 0 0 6px rgba(255, 0, 0, 0.4); }
-}
+
 
 .cc5dd25190031396-wrapper:hover {
     animation: serverPulse 1.2s infinite ease-in-out;
+}
+
+/* Gesamtes Modal */
+._8a031a135bfcb9ba-container {
+    background-color: oklch(26.862% 0.00003 271.152); /* dunkler, undurchsichtiger Hintergrund */
+    opacity: 1 !important;               /* keine Transparenz zulassen */
+
+}
+
+
+[class*="_6131ab3dbe0affed-scroller d125d22cdfd32cfe-auto d125d22cdfd32cfe-scrollerBase"]
+    {background-color: oklch(26.862% 0.00003 271.152); /* dunkler, undurchsichtiger Hintergrund */
+    opacity: 1 !important;               /* keine Transparenz zulassen */
+
+}
+
+
+
+
+/* Ganze Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;   /* vertikal */
+    height: 12px;  /* horizontal */
+}
+
+
+/* Hover-Effekt */
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(143, 143, 143, 0.628);
+}
+
+
+[class*="cf48127484dbde85-text-md/semibold"]{
+    color: rgb(255, 255, 255);
+
+}
+
+
+
+/* Nur "Bildschirm teilen" rot färben */
+div.cf48127484dbde85-text-sm\/medium {
+    color: oklch(90.881% 0.01218 96.486) !important;
+}
+
+/* Text im Live-Qualitäts-Indikator weiß machen */
+._30845ecfafc292c8-qualityIndicator,
+._30845ecfafc292c8-qualityResolution {
+    color: oklch(90.881% 0.01218 96.486) !important;
 }
