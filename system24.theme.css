@@ -158,3 +158,63 @@ body {
     --purple-5: oklch(86.28% 0.14679 204.117);
 
 }
+
+
+
+/* === ALLES ÖFFNENDE IMMER OPAK === */
+[class*="settings"],
+[class*="modal"],
+
+[class*="container"][class*="floating"],
+[class*="popout"],
+[class*="menu"],
+[class*="context"],
+[class*="picker"],
+[class*="inbox"],
+[class*="messagesPopout"],
+[class*="inboxTitle"],
+[class*="picker"],
+[class*="settings"],
+[class*="content"][class*="thin"] {
+    background-color: oklch(26.862% 0.00003 271.152) !important;
+    backdrop-filter: none !important;
+} 
+
+
+/* Haupt-VideoGrid */
+[class*="videoGrid"],
+[class*="root"]
+{
+    background-color: oklch(26.862% 0.00003 271.152 / 0);
+
+
+}
+
+._927fca0ac7164d54-container{
+    background-color: oklch(26.862% 0.00003 271.152);
+
+    background-clip: padding-box;
+}
+._629e4c86564a4ee7-scroller::-webkit-scrollbar-thumb {
+    background-color: oklch(26.862% 0.00003 271.152);
+
+    background-clip: padding-box;
+}
+
+.cc5dd25190031396-wrapper:hover {
+    animation: serverPulse 1.2s infinite ease-in-out;
+}
+
+/* Gesamtes Modal */
+._8a031a135bfcb9ba-container {
+    background-color: oklch(26.862% 0.00003 271.152); /* dunkler, undurchsichtiger Hintergrund */
+    opacity: 1 !important;               /* keine Transparenz zulassen */
+
+}
+
+
+[class*="_6131ab3dbe0affed-scroller d125d22cdfd32cfe-auto d125d22cdfd32cfe-scrollerBase"]
+    {background-color: oklch(26.862% 0.00003 271.152); /* dunkler, undurchsichtiger Hintergrund */
+    opacity: 1 !important;               /* keine Transparenz zulassen */
+
+}
