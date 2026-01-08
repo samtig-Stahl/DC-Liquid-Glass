@@ -164,8 +164,22 @@ body {
 
 .a2f5142ba8328dfd-content::before {
     content: var(--startup-ascii);
+    
+    /* Animation hinzufügen: Name | Dauer | Art | Verzögerung | Richtung */
+    animation: fadeOut 0.5s ease-in-out 5s forwards;
 }
 
+/* Definition der Animation */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+}
 
 /* === ALLES ÖFFNENDE IMMER OPAK === */
 [class*="settings"],
