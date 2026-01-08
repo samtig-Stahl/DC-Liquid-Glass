@@ -291,3 +291,22 @@ div.cf48127484dbde85-text-sm\/medium {
 ._30845ecfafc292c8-qualityResolution {
     color: oklch(90.881% 0.01218 96.486) !important;
 }
+
+
+.a2f5142ba8328dfd-content::before {
+    content:
+"
+
+ ____            _                   _________  \A\
+/ ___| _   _ ___| |_ ___ _ __ ___   |___ /___ \   \A\
+\___ \| | | / __| __/ _ \ '_ ` _ \    |_ \ __) |\A\
+ ___) | |_| \__ \ ||  __/ | | | | |  ___) / __/ \A\
+|____/ \__, |___/\__\___|_| |_| |_| |____/_____|\A\
+       |___/                                    \A\
+
+ ";
+
+    white-space: pre;
+    font-family: monospace;
+}
+
