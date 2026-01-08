@@ -594,9 +594,7 @@ body {
     ._36d072eab2b2e737-scrollerSpacer {
         height: calc(26px + var(--space-xs));
     }
-    ._36d072eab2b2e737-scroller::-webkit-scrollbar-track {
-        margin-bottom: calc(26px);
-    }
+
     .f75fb00fb7356cbe-chatContent:has(.b8880176888cc928-typing) ._36d072eab2b2e737-messagesWrapper::before {
         content: '';
         position: absolute;
@@ -1489,9 +1487,6 @@ body {
     .f7ecaca5c80dbf3a-button.f7ecaca5c80dbf3a-dangerous:hover /* image attachment delete button hover in chat bar */ {
         color: var(--red-4);
     }
-    ._084343c4f11eaaab-contentWrapper ::-webkit-scrollbar-thumb /* gif picker scrollbar */ {
-        background-color: var(--bg-1);
-    }
 
     ._5bc7ed9d4097f6b5-circleIconButton /* new server button */ {
         color: var(--text-3);
@@ -2050,4 +2045,5 @@ body {
         gap: 0;
     }
 }
+
 
