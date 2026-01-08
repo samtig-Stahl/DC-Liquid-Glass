@@ -168,8 +168,6 @@ body {
 [aria-label="Posteingang"][role="dialog"],
 [aria-label="Posteingang"] [class*="container"],
 [aria-label="Posteingang"] [class*="messagesPopout"],
-[aria-label="Posteingang"] [class*="content"],
-[aria-label="Posteingang"] [class*="footer"],
 [class*="container"][class*="floating"],
 [class*="popout"],
 [class*="menu"],
