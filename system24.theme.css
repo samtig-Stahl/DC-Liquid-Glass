@@ -298,10 +298,12 @@ div.cf48127484dbde85-text-sm\/medium {
 /* Macht den Text "Du hast die Wiedergabe..." weiß */
 [data-text-variant="text-md/semibold"][class*="header"] {
     color: #ffffff !important;
+        background-color: hsla(0, 0%, 94%, 0);
 }
 
 /* Falls der Text in einem Element mit einer anderen Variante steht, 
    nutzen wir diesen allgemeineren Selektor als Sicherheit */
 div:has(> [data-text-variant="text-md/semibold"]) {
     color: #ffffff !important;
+        background-color: hsla(0, 0%, 94%, 0);
 }
