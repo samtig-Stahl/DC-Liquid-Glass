@@ -296,16 +296,13 @@ div.cf48127484dbde85-text-sm\/medium {
 }
 
 
-/* Sucht exakt das Element mit diesem Textinhalt */
-[data-text-variant="text-md/semibold"]:contains("Du hast die Wiedergabe in einem separaten Fenster geöffnet"),
-[class*="cf48127484dbde85-text-md/semibold"][class*="c6e099f3aa7c1767-header"] {
+/* Macht den Text "Du hast die Wiedergabe..." weiß */
+[data-text-variant="text-md/semibold"][class*="header"] {
     color: #ffffff !important;
 }
 
-/* Falls "contains" vom Browser/Client nicht unterstützt wird, 
-   greift dieser Selektor für die spezifische Discord-Klasse */
-div[data-text-variant="text-md/semibold"] {
+/* Falls der Text in einem Element mit einer anderen Variante steht, 
+   nutzen wir diesen allgemeineren Selektor als Sicherheit */
+div:has(> [data-text-variant="text-md/semibold"]) {
     color: #ffffff !important;
 }
-
-
