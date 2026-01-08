@@ -165,9 +165,6 @@ body {
 /* === ALLES ÖFFNENDE IMMER OPAK === */
 [class*="settings"],
 [class*="modal"],
-[aria-label="Posteingang"][role="dialog"],
-[aria-label="Posteingang"] [class*="container"],
-[aria-label="Posteingang"] [class*="messagesPopout"],
 [class*="container"][class*="floating"],
 [class*="popout"],
 [class*="menu"],
