@@ -190,25 +190,6 @@ body {
 
 }
 
-._927fca0ac7164d54-container{
-    background-color: oklch(26.862% 0.00003 271.152);
-
-    background-clip: padding-box;
-}
-._629e4c86564a4ee7-scroller::-webkit-scrollbar-thumb {
-    background-color: oklch(26.862% 0.00003 271.152);
-
-    background-clip: padding-box;
-}
-
-.cc5dd25190031396-wrapper:hover {
-    animation: serverPulse 1.2s infinite ease-in-out;
-}
-
-/* Gesamtes Modal */
-._8a031a135bfcb9ba-container {
-    background-color: oklch(26.862% 0.00003 271.152); /* dunkler, undurchsichtiger Hintergrund */
-    opacity: 1 !important;               /* keine Transparenz zulassen */
 
 }
 
@@ -246,26 +227,6 @@ div.cf48127484dbde85-text-sm\/medium {
     color: rgb(241, 241, 241);
     font-size: 10px;
 }
-
-
-/* Track (Hintergrund) */
-::-webkit-scrollbar-track {
-    background: rgba(0,0,0,0.1); /* leicht transparent, ok */
-    border-radius: 10px;
-}
-
-/* Scrollbar Thumb */
-::-webkit-scrollbar-thumb {
-    background-color: rgba(139, 139, 139, 0.479) !important; /* immer rot */
-    border-radius: 10px;
-    border: 3px solid rgba(0,0,0,0.1);
-}
-
-/* Hover */
-::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(187, 187, 187, 0.623) !important; /* grün beim hover */
-}
-
 
 /* Basiszustand */
 ._6e9f8dce4cc18de3-wrapper {
