@@ -553,11 +553,8 @@ body {
     ._3f21e80f8677ec40-slider > rect[rx='10'] {
         rx: 0 !important;
     }
-
-    ::-webkit-scrollbar-thumb {
-        border-radius: 0 !important;
-    }
 }
+
 
 
 
