@@ -80,8 +80,8 @@ body {
     --text-1: oklch(92.346% 0.00214 14.495); /* other normally white text */
     --text-2: oklch(85% 0 0); /* headings and important text */
     --text-3: oklch(90.881% 0.01218 96.486); /* normal text */
-    --text-4: oklch(78.577% 0.00009 271.152); /* icon buttons and channels */
-    --text-5: oklch(44.953% 0.00005 271.152); /* muted channels/chats and timestamps */
+    --text-4: oklch(78.577% 0.00009 271.152 / 0.815); /* icon buttons and channels */
+    --text-5: oklch(82.032% 0.00009 271.152 / 0.884); /* muted channels/chats and timestamps */
 
     /* background and dark colors */
     --bg-1: oklch(31% 0 0 / 0.65);
@@ -115,7 +115,7 @@ body {
     /* border colors */
     --border-light: var(--hover); /* general light border color */
     --border: var(--active); /* general normal border color */
-    --border-hover: var(--accent-2); /* border color of panels when hovered */
+    --border-hover: hsl(220, 0%, 100%, 0.1); /* border color of panels when hovered */
     --button-border: hsl(220, 0%, 100%, 0.1); /* neutral border color of buttons */
 
     /* base colors */
@@ -152,8 +152,8 @@ body {
 */
 
     --purple-1: oklch(85.337% 0.27591 140.744);
-    --purple-2: oklch(69.926% 0.00008 271.152);
-    --purple-3: oklch(49.97% 0.00006 271.152);
+    --purple-2: oklch(56.741% 0.00904 217.005);
+    --purple-3: oklch(74.525% 0.00112 13.022);
     --purple-4: oklch(42.506% 0.00663 17.018);
     --purple-5: oklch(86.28% 0.14679 204.117);
 
@@ -230,6 +230,45 @@ div.cf48127484dbde85-text-sm\/medium {
 ._30845ecfafc292c8-qualityResolution {
     color: oklch(90.881% 0.01218 96.486) !important;
 }
+
+
+@import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/startup.css');
+
+.a2f5142ba8328dfd-content::before {
+    content: var(--startup-ascii);
+}
+
+
+.vc-text-btn-base.vc-text-btn-secondary.vc-ranb-button {
+    color: rgb(241, 241, 241);
+    font-size: 10px;
+}
+
+/* Ganze Scrollbar */
+::-webkit-scrollbar {
+    width: 20px;   /* vertikal breiter */
+    height: 20px;  /* horizontal breiter */
+}
+
+/* Track (Hintergrund) */
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.1); /* leicht transparent, ok */
+    border-radius: 10px;
+}
+
+/* Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(139, 139, 139, 0.479) !important; /* immer rot */
+    border-radius: 10px;
+    border: 3px solid rgba(0,0,0,0.1);
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(187, 187, 187, 0.623) !important; /* grün beim hover */
+}
+
+
 
 
 
