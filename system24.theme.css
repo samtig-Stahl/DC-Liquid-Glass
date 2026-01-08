@@ -42,7 +42,7 @@ body {
 
     /* background image options */
     --background-image: on; /* off: no background image, on: enable background image (must set url variable below) */
-    --background-image-url: url('https://github.com/samtig-Stahl/DC-Liquid-Glass/blob/main/back.png?raw=true');
+    --background-image-url: url('');
  /* url of the background image */
 
     /* transparency/blur options */
