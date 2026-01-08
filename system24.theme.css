@@ -211,7 +211,7 @@ body {
     opacity: 1 !important;               /* keine Transparenz zulassen */
 
 }
-[class*="_6b0e07cbaf13ec4e-scroller d125d22cdfd32cfe-thin d125d22cdfd32cfe-scrollerBase"],
+[class*="_13533e3c5791980f-autocompleteInner _6b0e07cbaf13ec4e-autocompleteInner"],
 [class*="theme-dark theme-darker images-dark _59d0d7075b521375-layer"],
 [class*="_6131ab3dbe0affed-scroller d125d22cdfd32cfe-auto d125d22cdfd32cfe-scrollerBase"]
     {background-color: oklch(26.862% 0.00003 271.152); /* dunkler, undurchsichtiger Hintergrund */
