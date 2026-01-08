@@ -159,7 +159,11 @@ body {
 
 }
 
+@import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/startup.css');
 
+.a2f5142ba8328dfd-content::before {
+    content: var(--startup-ascii);
+}
 
 
 /* === ALLES ÖFFNENDE IMMER OPAK === */
