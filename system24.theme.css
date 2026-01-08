@@ -164,6 +164,7 @@ body {
 
 /* === ALLES ÖFFNENDE IMMER OPAK === */
 [class*="settings"],
+[class*="e131a99484292a19-noiseCancellationPopout"],
 [class*="modal"],
 [class*="container"][class*="floating"],
 [class*="popout"],
