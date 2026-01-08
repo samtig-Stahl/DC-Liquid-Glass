@@ -161,6 +161,7 @@ body {
 
 
 
+
 /* === ALLES ÖFFNENDE IMMER OPAK === */
 [class*="settings"],
 [class*="modal"],
@@ -190,7 +191,6 @@ body {
 
 }
 
-
 ._133bf5eea8e33a34-item._133bf5eea8e33a34-addFriend span {
     color: rgb(37, 37, 37) !important; /* Standardfarbe */
     transition: color 0.2s; 
@@ -201,19 +201,34 @@ body {
 }
 
 
+._927fca0ac7164d54-container{
+    background-color: oklch(26.862% 0.00003 271.152);
 
-[class*="_13533e3c5791980f-autocompleteInner d1405bf11dcfb07a-wrapper"],
-[class*="_13533e3c5791980f-autocomplete d1405bf11dcfb07a-outerWrapper"],
-[class*="_13533e3c5791980f-autocompleteInner _6b0e07cbaf13ec4e-autocompleteInner"],
+    background-clip: padding-box;
+}
+._629e4c86564a4ee7-scroller::-webkit-scrollbar-thumb {
+    background-color: oklch(26.862% 0.00003 271.152);
+
+    background-clip: padding-box;
+}
+
+.cc5dd25190031396-wrapper:hover {
+    animation: serverPulse 1.2s infinite ease-in-out;
+}
+
+/* Gesamtes Modal */
+._8a031a135bfcb9ba-container {
+    background-color: oklch(26.862% 0.00003 271.152); /* dunkler, undurchsichtiger Hintergrund */
+    opacity: 1 !important;               /* keine Transparenz zulassen */
+
+}
+
+
 [class*="_6131ab3dbe0affed-scroller d125d22cdfd32cfe-auto d125d22cdfd32cfe-scrollerBase"]
     {background-color: oklch(26.862% 0.00003 271.152); /* dunkler, undurchsichtiger Hintergrund */
     opacity: 1 !important;               /* keine Transparenz zulassen */
 
-    }
-
-
-
-
+}
 
 
 /* Nur "Bildschirm teilen" rot färben */
@@ -222,21 +237,11 @@ div.cf48127484dbde85-text-sm\/medium {
 }
 
 /* Text im Live-Qualitäts-Indikator weiß machen */
-[class*="cf48127484dbde85-text-md/semibold"][class*="c6e099f3aa7c1767-header"],
-/* 2. Korrigierte Klassen-Schreibweise (Punkt davor, Schrägstrich maskiert) */
-.cf48127484dbde85-text-md\/semibold.c6e099f3aa7c1767-header,
-/* 3. Die restlichen Indikatoren */
-[class*="qualityIndicator"],
-[class*="qualityResolution"] {
+._30845ecfafc292c8-qualityIndicator,
+._30845ecfafc292c8-qualityResolution {
     color: oklch(90.881% 0.01218 96.486) !important;
 }
 
-
-@import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/startup.css');
-
-.a2f5142ba8328dfd-content::before {
-    content: var(--startup-ascii);
-}
 
 
 .vc-text-btn-base.vc-text-btn-secondary.vc-ranb-button {
@@ -285,6 +290,9 @@ div.cf48127484dbde85-text-sm\/medium {
 ._6e9f8dce4cc18de3-wrapper:hover img {
     transform: scale(1.05); /* Das Bild bewegt sich leicht mit */
 }
+
+
+
 
 
 
