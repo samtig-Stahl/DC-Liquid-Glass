@@ -164,7 +164,7 @@ body {
 /* === ALLES ÖFFNENDE IMMER OPAK === */
 [class*="settings"],
 [class*="modal"],
-
+[class*="platform-win theme-dark theme-darker images-dark density-default font-size-16 has-webkit-scrollbar reduce-motion visual-refresh refresh-title-bar-small"],
 [class*="container"][class*="floating"],
 [class*="popout"],
 [class*="menu"],
@@ -191,6 +191,30 @@ body {
 }
 
 
+._133bf5eea8e33a34-item._133bf5eea8e33a34-addFriend span {
+    color: rgb(37, 37, 37) !important; /* Standardfarbe */
+    transition: color 0.2s; 
+}
+
+._133bf5eea8e33a34-item._133bf5eea8e33a34-addFriend:hover span {
+    color: #ffffff !important; /
+}
+
+
+
+[class*="_13533e3c5791980f-autocompleteInner d1405bf11dcfb07a-wrapper"],
+[class*="_13533e3c5791980f-autocomplete d1405bf11dcfb07a-outerWrapper"],
+[class*="_13533e3c5791980f-autocompleteInner _6b0e07cbaf13ec4e-autocompleteInner"],
+[class*="_6131ab3dbe0affed-scroller d125d22cdfd32cfe-auto d125d22cdfd32cfe-scrollerBase"]
+    {background-color: oklch(26.862% 0.00003 271.152); /* dunkler, undurchsichtiger Hintergrund */
+    opacity: 1 !important;               /* keine Transparenz zulassen */
+
+    }
+
+
+
+
+
 
 /* Nur "Bildschirm teilen" rot färben */
 div.cf48127484dbde85-text-sm\/medium {
@@ -198,6 +222,7 @@ div.cf48127484dbde85-text-sm\/medium {
 }
 
 /* Text im Live-Qualitäts-Indikator weiß machen */
+._cf48127484dbde85-text-md/semibold c6e099f3aa7c1767-header,
 ._30845ecfafc292c8-qualityIndicator,
 ._30845ecfafc292c8-qualityResolution {
     color: oklch(90.881% 0.01218 96.486) !important;
@@ -216,7 +241,7 @@ div.cf48127484dbde85-text-sm\/medium {
     font-size: 10px;
 }
 
-/* Basiszustand */
+/* server lsit */
 ._6e9f8dce4cc18de3-wrapper {
     transform: translateX(0) translateY(0) scale(1);
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
