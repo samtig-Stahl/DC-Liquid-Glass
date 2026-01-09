@@ -292,48 +292,47 @@ div.cf48127484dbde85-text-sm\/medium {
     font-size: 10px;
 }
 
-/* server lsit */
+/* server lsit 
 ._6e9f8dce4cc18de3-wrapper {
     transform: translateX(0) translateY(0) scale(1);
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
     will-change: transform;
 }
 
-/* Hover → vorwärts animieren */
+
 ._6e9f8dce4cc18de3-wrapper:hover {
     animation: serverHoverForward 240ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Hover verlassen → sauber zurück */
 ._6e9f8dce4cc18de3-wrapper:not(:hover) {
     animation: serverHoverBackward 180ms ease forwards;
 }
 
-/* Grundzustand des Containers */
+
 ._6e9f8dce4cc18de3-wrapper {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Sanfter "Snap"-Effekt */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
     cursor: pointer;
-    border-radius: 50%; /* Startet als Kreis */
+    border-radius: 50%; 
     overflow: hidden;
 }
 
-/* Hover-Zustand */
+
 ._6e9f8dce4cc18de3-wrapper:hover {
-    border-radius: 15px; /* Wird zum abgerundeten Quadrat */
-    transform: scale(1.1); /* Minimales Vergrößern für Feedback */
-    background-color: #5865f200; /* Discord Blurple als Highlight (falls kein Bild da ist) */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Tiefe hinzufügen */
+    border-radius: 15px; 
+    transform: scale(1.1); 
+    background-color: #5865f200; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
 }
 
-/* Optional: Animation für das Bild/Icon im Inneren */
+
 ._6e9f8dce4cc18de3-wrapper img {
     transition: transform 0.3s ease;
 }
 
 ._6e9f8dce4cc18de3-wrapper:hover img {
-    transform: scale(1.05); /* Das Bild bewegt sich leicht mit */
+    transform: scale(1.05); 
 }
-
+*/
 
 /* Macht den Text "Du hast die Wiedergabe..." weiß */
 [data-text-variant="text-md/semibold"][class*="header"] {
@@ -428,6 +427,7 @@ background-color: rgba(255, 2, 2, 0);
 /* Den Button für "Geschenk verschenken" ausblenden */
 div[aria-label="Verschenke ein Geschenk"], 
 div[aria-label="Ein Geschenk senden"], 
+div[aria-label*="Geschenk"],
 div[aria-label="Verschenke ein Geschenke"] {
     display: none !important;
 }
@@ -438,13 +438,13 @@ div[aria-label="Verschenke ein Geschenke"] {
 }
 
 
-/* 
+
 div[class*="upsell"], 
 div[class*="premium"],
 div[class*="NitroUpsell"] {
     display: none !important;
 }
-*/
+
 
 /* Anti Nitro ende working */
 
