@@ -266,15 +266,18 @@ body {
     animation: serverPulse 1.2s infinite ease-in-out;
 }
 
-/* Sofortiges Schließen ohne Animation */
-[class*="layer-"] {
-    transition-duration: 0s !important;
+/* Snappy Modal-Übergänge */
+._8a031a135bfcb9ba-container,
+[class*="modalContent"],
+[class*="modalContentInner"] {
+    /* 0.05s bis 0.1s ist der Bereich für 'Snappy' */
+    transition: transform 0.08s cubic-bezier(0.2, 0, 0, 1) !important;
+    transition-property: transform, opacity !important;
 }
 
-._8a031a135bfcb9ba-container {
-    /* Verhindert das langsame Verblassen */
-    animation: none !important;
-    transition: none !important;
+/* Entferne das Erstarren der Opacity beim Schließen */
+[class*="layer-"] {
+    transition: opacity 0.1s ease-out !important;
 }
 
 [class*="_6131ab3dbe0affed-scroller d125d22cdfd32cfe-auto d125d22cdfd32cfe-scrollerBase"]
