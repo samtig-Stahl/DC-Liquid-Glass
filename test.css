@@ -274,39 +274,46 @@ body {
 
 
 
-/* 1. Einheitliches Timing für den Layer (Erscheinen & Verschwinden) */
-[class*="layer-"] {
-    /* Wir nutzen 0.1s für beide Wege */
-    transition: opacity 0.1s ease-out !important;
-    animation: none !important;
-}
 
-/* 2. Das Modal selbst: Keine Bewegung, nur Fading */
+/* 1. DAS FENSTER: Sofortiges Erscheinen ohne Animation */
 ._8a031a135bfcb9ba-container,
-.e4491282b6a5364a-modal {
+.e4491282b6a5364a-modal,
+[class*="layer-"] {
     animation: none !important;
     transform: none !important;
-    /* Wir deaktivieren die Transition hier, damit sie nur vom Layer (Punkt 1) gesteuert wird */
+    /* transition: none beim Erscheinen, damit es nicht hakt */
     transition: none !important;
 }
 
-/* 3. Hintergrund (Backdrop): Ebenfalls auf 0.1s synchronisiert */
+/* 2. DER HINTERGRUND (Backdrop): Schneller Fade beim Öffnen und Schließen */
 [class*="backdrop-"] {
     animation: none !important;
+    /* 0.08s ist extrem schnell, aber noch weich */
     transition: opacity 0.1s ease-out !important;
 }
 
-/* 4. Fix für das Schließen: Sicherstellen, dass es nicht hängen bleibt */
-[class*="layer-"][style*="opacity: 0"] {
+/* 3. DAS SCHLIESSEN: Snappy Fade für das Fenster beim Gehen */
+/* Wir erlauben die Transition nur, wenn Discord den Layer zum Schließen vorbereitet */
+[class*="layer-"][style*="opacity: 0"],
+[class*="layer-"][style*="opacity: 0"] ._8a031a135bfcb9ba-container {
     opacity: 0 !important;
     visibility: hidden !important;
+    transition: opacity 0.1s ease-out !important;
 }
 
-/* 5. Fix für das Öffnen: Sofortige Sichtbarkeit ohne 'Zucken' */
-[class*="layer-"]:not([style*="opacity: 0"]) {
-    opacity: 1 !important;
-    visibility: visible !important;
+/* 4. Fix: Damit das Fenster beim Schließen nicht sofort hart wegploppt */
+[class*="layer-"] {
+    transition: opacity 0.1s ease-out !important;
 }
+
+/* Sicherstellen, dass die Opacity beim Öffnen sofort auf 1 ist */
+[class*="layer-"]:not([style*="opacity: 0"]) {
+    opacity: 0,5 !important;
+}
+
+
+
+
 
 
 
