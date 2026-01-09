@@ -266,11 +266,6 @@ body {
     animation: serverPulse 1.2s infinite ease-in-out;
 }
 
-/* Gesamtes Modal */
-._8a031a135bfcb9ba-container {
-    background-color: oklch(26.862% 0.00003 271.152); /* dunkler, undurchsichtiger Hintergrund */
-
-}
 
 
 [class*="_6131ab3dbe0affed-scroller d125d22cdfd32cfe-auto d125d22cdfd32cfe-scrollerBase"]
