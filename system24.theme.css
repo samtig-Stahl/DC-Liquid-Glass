@@ -198,13 +198,21 @@ body {
 }
 
 /* === ALLES ÖFFNENDE IMMER OPAK === */
+
+
+/*
+[class*="container"]
+[class*="content"]*/
+
+
+
 [class*="authBoxExpanded"],
 [class*="authBox"],
 
 [class*="settings"],
 [class*="e131a99484292a19-noiseCancellationPopout"],
 [class*="modal"],
-[class*="container"][class*="floating"],
+[class*="floating"],
 [class*="popout"],
 [class*="menu"],
 [class*="context"],
@@ -214,7 +222,7 @@ body {
 [class*="inboxTitle"],
 [class*="picker"],
 [class*="settings"],
-[class*="content"][class*="thin"] {
+[class*="thin"] {
     background-color: oklch(26.862% 0.00003 271.152) !important;
     backdrop-filter: none !important;
 } 
