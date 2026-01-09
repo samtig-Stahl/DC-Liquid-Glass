@@ -208,10 +208,6 @@ body {
     backdrop-filter: none !important;
 } 
 
-._957962c2bd49881b-recentMentionsPopout{
-    background-color: oklch(26.862% 0.00003 271.152) !important;
-}
-
 
 /* Haupt-VideoGrid */
 [class*="videoGrid"],
@@ -387,5 +383,10 @@ div:has(> [data-text-variant="text-md/semibold"]) {
 .vc-shc-allowed-users-and-roles-container {
 background-color: rgba(255, 2, 2, 0);
 
+}
+
+
+._957962c2bd49881b-recentMentionsPopout{
+    background-color: oklch(26.862% 0.00003 271.152) !important;
 }
 
