@@ -289,7 +289,7 @@ body {
 [class*="backdrop-"] {
     animation: none !important;
     /* 0.08s ist extrem schnell, aber noch weich */
-    transition: opacity 0.08s ease-out !important;
+    transition: opacity 0.1s ease-out !important;
 }
 
 /* 3. DAS SCHLIESSEN: Snappy Fade für das Fenster beim Gehen */
@@ -308,7 +308,7 @@ body {
 
 /* Sicherstellen, dass die Opacity beim Öffnen sofort auf 1 ist */
 [class*="layer-"]:not([style*="opacity: 0"]) {
-    opacity: 1 !important;
+    opacity: 0,5 !important;
 }
 
 
