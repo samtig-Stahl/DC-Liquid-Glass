@@ -267,14 +267,10 @@ body {
 }
 
 
-._8a031a135bfcb9ba-container {
-    background-color: oklch(26.862% 0.00003 271.152) !important;
+/* Um nur den Header-Bereich zu ändern */
+._8a031a135bfcb9ba-header {
+    background-color: #ecf0f1;
 }
-
-
-
-
-
 
 
 /* 1. DAS FENSTER: Sofortiges Erscheinen ohne Animation */
@@ -562,3 +558,10 @@ div[class*="premium"] {
 
 
 /* Scrolleiste ende working */
+
+
+
+._8a031a135bfcb9ba-container {
+    background-color: oklch(26.862% 0.00003 271.152) !important;
+    color: white !important; /* Textfarbe auf Weiß setzen, falls der Hintergrund dunkel ist */
+}
