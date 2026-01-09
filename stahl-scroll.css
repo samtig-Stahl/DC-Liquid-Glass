@@ -1,0 +1,74 @@
+/**
+ * @name system32
+ * @description better Scroller!
+ * @author samtig_Stahl
+ * @version 1.0.5
+ * @invite VytHqTKsMV
+ * @website https://info.bountysmp.de
+ * @authorId 1047563480930193538
+*/
+
+/* Scrolleiste anfanfg working */
+::-webkit-scrollbar {
+    width: 8px !important; 
+    height: 8px !important;
+}
+
+/* Der bewegliche Teil (Thumb) - Jetzt mit deiner Farbe */
+::-webkit-scrollbar-thumb {
+    background-color: #5f5f5f !important;
+    border-radius: 35px !important;
+    /* Der 'transparent' Border sorgt für den Abstand zum Rand */
+    border: 2px solid transparent !important;
+    background-clip: padding-box !important; /* WICHTIG: Erhält die Form trotz Border */
+}
+
+/* Hover-Effekt */
+::-webkit-scrollbar-thumb:hover, 
+::-webkit-scrollbar-thumb:active {
+    background-color: #7c7c7c !important;
+}
+
+/* Hintergrund der Leiste */
+::-webkit-scrollbar-track {
+    background: transparent !important; /* Oder rgba(0,0,0,0.1) falls gewünscht */
+}
+
+/* Deaktiviert die Scrollbar NUR in der Serverliste (links) */
+[class*="guilds_"]::-webkit-scrollbar,
+[class*="unreadMentionsIndicator_"] + [class*="scroller_"]::-webkit-scrollbar,
+.ef3116c2da186559-scroller::-webkit-scrollbar {
+    width: 0px !important;
+    display: none !important;
+}
+
+/* 1. Nur den Haupt-Chat-Scroller breiter machen */
+._36d072eab2b2e737-scroller::-webkit-scrollbar {
+    width: 14px !important; /* Hier die gewünschte Breite einstellen */
+}
+
+/* Entfernt die Scrollbar NUR im 'Hidden Text Channel' Fenster */
+[class*="scrollerBase"]:has(div.vc-text-xxl:scope:contains("This is a hidden text channel"))::-webkit-scrollbar,
+[class*="scrollerBase"]:has(div.vc-text-xxl:scope:contains("This is a hidden text channel"))::-webkit-scrollbar-thumb {
+    width: 0px !important;
+    display: none !important;
+}
+
+/* Fallback-Lösung (falls :contains nicht greift) */
+/* Diese Regel prüft auf die typische Struktur eines versteckten Textkanals */
+[class*="scrollerBase"]:has(.vc-shc-container):not(:has([class*="video"])):not(:has([class*="callContainer"]))::-webkit-scrollbar {
+    width: 0px !important;
+    display: none !important;
+}
+
+/* Falls die Scrollbar auch erst tiefer anfangen soll */
+.c8ffbb79449f399c-members::-webkit-scrollbar-track {
+    margin-top: 15px !important; /* Gleicher Wert wie oben für eine saubere Optik */
+}
+
+/* Den gesamten Scroll-Inhalt nach unten schieben */
+._36d072eab2b2e737-scroller {
+    margin-top: 10px; /* Hier den gewünschten Wert einsetzen */
+    padding-top: 10px;
+}
+/* Scrolleiste ende working */
