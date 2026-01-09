@@ -13,7 +13,6 @@
 @import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/1.css');
 @import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/search.css');
 @import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/startup.css');
-/*@import url("https://raw.githubusercontent.com/tom22k/discord-css/main/Themes/HideNitroUpsellV2.css");*/
 
 
 body {
@@ -197,6 +196,16 @@ body {
     content: var(--startup-ascii);
 }
 
+
+
+
+/* Stabilisiert die Sidebar während des Ladens */
+._5e434347c823b592-sidebar, 
+._5e434347c823b592-sidebarList {
+    contain: paint; 
+    will-change: transform;
+}
+
 /* === ALLES ÖFFNENDE IMMER OPAK === */
 
 
@@ -350,9 +359,10 @@ div.cf48127484dbde85-text-sm\/medium {
 
 /* Falls der Text in einem Element mit einer anderen Variante steht, 
    nutzen wir diesen allgemeineren Selektor als Sicherheit */
-div:has(> [data-text-variant="text-md/semibold"]) {
+/* Viel schnellerer Selektor für weißen Text */
+[data-text-variant="text-md/semibold"][class*="header"] {
     color: #ffffff !important;
-    background-color: hsla(0, 0%, 94%, 0) !important;
+    background-color: transparent !important;
 }
 
 
@@ -423,22 +433,8 @@ background-color: rgba(255, 2, 2, 0);
 }
 
 
-/* Anti Nitro anfang working */
 
-[aria-label="Ein Geschenk senden"] {
-    display: none !important;
-}
-[href="/store"] {
-    display: none !important;
-} 
 
-/* Den Button für "Geschenk verschenken" ausblenden */
-div[aria-label="Verschenke ein Geschenk"], 
-div[aria-label="Ein Geschenk senden"], 
-div[aria-label*="Geschenk"],
-div[aria-label="Verschenke ein Geschenke"] {
-    display: none !important;
-}
 /* Optional: Sicherstellen, dass die Container-Abstände angepasst werden */
 ._740174f3d6a2c8fe-buttons {
     display: flex;
@@ -447,10 +443,18 @@ div[aria-label="Verschenke ein Geschenke"] {
 
 
 
+/* Ersetze deine Anti-Nitro Sektion hiermit */
+[href="/store"],
+div[aria-label="Verschenke ein Geschenk"], 
+div[aria-label="Ein Geschenk senden"], 
+div[aria-label*="Geschenk"], 
+[aria-label="Ein Geschenk senden"],
+[aria-label*="Geschenk"],
 div[class*="upsell"], 
-div[class*="premium"],
-div[class*="NitroUpsell"] {
+div[class*="premium"] {
     display: none !important;
+    height: 0 !important;
+    overflow: hidden !important;
 }
 
 
@@ -505,12 +509,12 @@ div[class*="NitroUpsell"] {
 }
 
 /* Fallback-Lösung (falls :contains nicht greift) */
-/* Diese Regel prüft auf die typische Struktur eines versteckten Textkanals */
+/* 
 [class*="scrollerBase"]:has(.vc-shc-container):not(:has([class*="video"])):not(:has([class*="callContainer"]))::-webkit-scrollbar {
     width: 0px !important;
     display: none !important;
 }
-
+*/
 
 /* Falls die Scrollbar auch erst tiefer anfangen soll */
 .c8ffbb79449f399c-members::-webkit-scrollbar-track {
