@@ -266,7 +266,16 @@ body {
     animation: serverPulse 1.2s infinite ease-in-out;
 }
 
+/* Sofortiges Schließen ohne Animation */
+[class*="layer-"] {
+    transition-duration: 0s !important;
+}
 
+._8a031a135bfcb9ba-container {
+    /* Verhindert das langsame Verblassen */
+    animation: none !important;
+    transition: none !important;
+}
 
 [class*="_6131ab3dbe0affed-scroller d125d22cdfd32cfe-auto d125d22cdfd32cfe-scrollerBase"]
     {background-color: oklch(26.862% 0.00003 271.152); /* dunkler, undurchsichtiger Hintergrund */
