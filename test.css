@@ -266,28 +266,24 @@ body {
     animation: serverPulse 1.2s infinite ease-in-out;
 }
 
-/* Verhindert das unschöne "Reinfliegen" von unten */
+/* 1. Animationen beim Öffnen komplett abschalten */
+._8a031a135bfcb9ba-container, 
+.e4491282b6a5364a-modal,
+[class*="layer-"] {
+    animation: none !important;
+    transform: none !important;
+    transition: none !important;
+}
+
+/* 2. Sicherstellen, dass es sofort voll sichtbar ist */
 .e4491282b6a5364a-modal {
-    transform: scale(1) !important; /* Fixiert die Größe sofort */
     opacity: 1 !important;
 }
 
-/* Der eigentliche Container: Schnell und direkt */
-._8a031a135bfcb9ba-container {
-    animation: snappy-entry 0.1s cubic-bezier(0.2, 0, 0, 1) !important;
-    transition: opacity 0.1s ease !important;
-}
-
-/* Eigene kleine Animation für einen sauberen Start */
-@keyframes snappy-entry {
-    0% {
-        opacity: 0;
-        transform: scale(1); /* Startet nur ganz leicht kleiner */
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+/* 3. Den Hintergrund (Backdrop) ebenfalls snappy machen */
+[class*="backdrop-"] {
+    transition: none !important;
+    opacity: 0.85 !important; /* Standard-Abdunkelung, aber ohne Faden */
 }
 
 [class*="_6131ab3dbe0affed-scroller d125d22cdfd32cfe-auto d125d22cdfd32cfe-scrollerBase"]
