@@ -187,6 +187,9 @@ body {
 }
 
 /* === ALLES ÖFFNENDE IMMER OPAK === */
+[class*="authBoxExpanded"],
+[class*="authBox"],
+
 [class*="settings"],
 [class*="e131a99484292a19-noiseCancellationPopout"],
 [class*="modal"],
