@@ -81,12 +81,12 @@ body {
       --background-floating: oklch(18% 0 0 / 1);
     /* text colors */
     --text-0: var(--bg-4); /* text on colored elements */
-    --text-1: oklch(92.346% 0.00214 14.495); /* other normally white text */
-    --text-2: oklch(100% 0.00011 271.152 / 0.89); /* headings and important text */
-    --text-3: rgb(227, 225, 216); /* normal text */
-    --text-4: oklch(73.678% 0.01156 17.022); /* icon buttons and channels */
-    --text-5: oklch(86.995% 0.0001 271.152 / 0.781); /* muted channels/chats and timestamps */
-
+    --text-1: oklch(95% 0 0); /* other normally white text? */ 
+    --text-2: oklch(92.797% 0.00011 271.152 / 0.936); /* headings and important text current server und cam */
+    --text-3: oklch(92.797% 0.00011 271.152 / 0.936); /* normal text icons und nachrichten chat*/
+    --text-4: oklch(88.224% 0.0001 271.152 / 0.678); /* icon buttons and channels alle channels*/
+    --text-5: oklch(77.628% 0.00009 271.152 / 0.87); /* muted channels/chats and timestamps */
+    
     /* background and dark colors */
     --bg-1: oklch(31% 0 0 / 0.65);
     --bg-2: oklch(27% 0 0 / 0.60);
@@ -428,3 +428,17 @@ background-color: rgba(255, 2, 2, 0);
     display: none !important;
 
 } 
+
+/* Den Button für "Geschenk verschenken" ausblenden */
+div[aria-label="Verschenke ein Geschenk"], 
+div[aria-label="Ein Geschenk senden"], 
+div[aria-label="Verschenke ein Geschenke"] {
+    display: none !important;
+}
+/* Optional: Sicherstellen, dass die Container-Abstände angepasst werden */
+._740174f3d6a2c8fe-buttons {
+    display: flex;
+    gap: 8px; /* Hier kannst du den Abstand zwischen den Icons steuern */
+}
+
+
