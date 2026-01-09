@@ -390,3 +390,41 @@ background-color: rgba(255, 2, 2, 0);
     background-color: oklch(26.862% 0.00003 271.152) !important;
 }
 
+/* Den grauen Hintergrund der Button-Container entfernen */
+
+._740174f3d6a2c8fe-buttonContainer,
+
+.expression-picker-chat-input-button {
+
+    background: transparent !important;
+
+    box-shadow: none !important; /* Entfernt eventuelle Schatten */
+
+}
+
+
+/* Falls die Buttons selbst einen Hintergrund haben */
+
+._740174f3d6a2c8fe-button {
+
+    background: transparent !important;
+
+}
+
+
+/* Den Geschenk-Button (Nitro) ausblenden */
+
+[aria-label="Ein Geschenk senden"] {
+
+    display: none !important;
+
+}
+
+
+/* Optional: Falls du auch den Nitro-Button in der Freundesliste/DM-Liste entfernen willst */
+
+[href="/store"] {
+
+    display: none !important;
+
+} 
