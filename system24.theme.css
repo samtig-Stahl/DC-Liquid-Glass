@@ -1,3 +1,14 @@
+/**
+ * @name system32
+ * @description better than the "bestVencordCssEverMade"!
+ * @author samtig_Stahl
+ * @version 1.0.5
+ * @invite VytHqTKsMV
+ * @website https://info.bountysmp.de
+ * @source https://github.com/refact0r/system24/blob/master/theme/system24.theme.css
+ * @authorId 1047563480930193538
+*/
+
 /* import theme modules */
 @import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/1.css');
 @import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/search.css');
@@ -382,7 +393,6 @@ div:has(> [data-text-variant="text-md/semibold"]) {
 
 .vc-shc-allowed-users-and-roles-container {
 background-color: rgba(255, 2, 2, 0);
-
 }
 
 
@@ -393,40 +403,26 @@ background-color: rgba(255, 2, 2, 0);
 /* Den grauen Hintergrund der Button-Container entfernen */
 
 ._740174f3d6a2c8fe-buttonContainer,
-
 .expression-picker-chat-input-button {
-
     background: transparent !important;
-
     box-shadow: none !important; /* Entfernt eventuelle Schatten */
-
 }
 
 
 /* Falls die Buttons selbst einen Hintergrund haben */
 
 ._740174f3d6a2c8fe-button {
-
     background: transparent !important;
-
 }
 
 
-/* Den Geschenk-Button (Nitro) ausblenden */
+/* Anti Nitro anfang working */
 
 [aria-label="Ein Geschenk senden"] {
-
     display: none !important;
-
 }
-
-
-/* Optional: Falls du auch den Nitro-Button in der Freundesliste/DM-Liste entfernen willst */
-
 [href="/store"] {
-
     display: none !important;
-
 } 
 
 /* Den Button für "Geschenk verschenken" ausblenden */
@@ -441,6 +437,21 @@ div[aria-label="Verschenke ein Geschenke"] {
     gap: 8px; /* Hier kannst du den Abstand zwischen den Icons steuern */
 }
 
+
+/* Die Nitro-Werbebox im Popout-Fenster entfernen */
+div[class*="upsell"], 
+div[class*="premium"],
+div[class*="NitroUpsell"] {
+    display: none !important;
+}
+
+/* Falls der Container über die von dir geposteten Klassen direkt angesprochen werden soll */
+._6c5a1559a27b6653-root, 
+._6c5a1559a27b6653-upsell {
+    display: none !important;
+}
+
+/* Anti Nitro ende working */
 
 /* Scrolleiste anfanfg working */
 
