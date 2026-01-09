@@ -438,18 +438,13 @@ div[aria-label="Verschenke ein Geschenke"] {
 }
 
 
-/* Die Nitro-Werbebox im Popout-Fenster entfernen */
+/* 
 div[class*="upsell"], 
 div[class*="premium"],
 div[class*="NitroUpsell"] {
     display: none !important;
 }
-
-/* Falls der Container über die von dir geposteten Klassen direkt angesprochen werden soll */
-._6c5a1559a27b6653-root, 
-._6c5a1559a27b6653-upsell {
-    display: none !important;
-}
+*/
 
 /* Anti Nitro ende working */
 
