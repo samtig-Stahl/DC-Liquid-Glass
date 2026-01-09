@@ -499,12 +499,12 @@ div[class*="premium"] {
 }
 
 /* Fallback-Lösung (falls :contains nicht greift) */
-/* 
+/* Diese Regel prüft auf die typische Struktur eines versteckten Textkanals */
 [class*="scrollerBase"]:has(.vc-shc-container):not(:has([class*="video"])):not(:has([class*="callContainer"]))::-webkit-scrollbar {
     width: 0px !important;
     display: none !important;
 }
-*/
+
 
 /* Falls die Scrollbar auch erst tiefer anfangen soll */
 .c8ffbb79449f399c-members::-webkit-scrollbar-track {
