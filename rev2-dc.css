@@ -1,0 +1,218 @@
+/**
+ * @name system32
+ * @description better than the "bestVencordCssEverMade"!
+ * @author samtig_Stahl
+ * @version 1.0.5
+ * @invite VytHqTKsMV
+ * @website https://info.bountysmp.de
+ * @source https://github.com/refact0r/system24/blob/master/theme/system24.theme.css
+ * @authorId 1047563480930193538
+*/
+
+/* Import Theme Modules */
+@import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/1.css');
+@import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/search.css');
+@import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/startup.css');
+@import url("https://raw.githubusercontent.com/tom22k/discord-css/main/Themes/HideNitroUpsellV2.css");
+
+/* === ROOT VARIABLES === */
+:root {
+    /* Fonts */
+    --font: 'DM Mono';
+    --code-font: 'DM Mono';
+    font-weight: 300;
+    letter-spacing: -0.05ch;
+
+    /* Sizes & Layout */
+    --gap: 12px;
+    --divider-thickness: 4px;
+    --border-thickness: 2px;
+    --border-hover-transition: 0.2s ease;
+
+    /* Animations */
+    --animations: on;
+    --list-item-transition: 0.2s ease;
+    --dms-icon-svg-transition: 0.4s ease;
+
+    /* Top bar */
+    --top-bar-height: 32px;
+    --top-bar-button-position: titlebar;
+    --top-bar-title-position: left;
+    --subtle-top-bar-title: off;
+
+    /* Window controls */
+    --custom-window-controls: off;
+    --window-control-size: 14px;
+
+    /* DMs */
+    --custom-dms-icon: off;
+    --dms-icon-svg-url: url('');
+    --dms-icon-svg-size: 90%;
+    --dms-icon-color-before: var(--icon-subtle);
+    --dms-icon-color-after: var(--white);
+    --custom-dms-background: off;
+    --dms-background-image-url: url('');
+    --dms-background-image-size: cover;
+    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2));
+
+    /* Background */
+    --background-image: on;
+    --background-image-url: url('');
+    --transparency-tweaks: on;
+    --remove-bg-layer: off;
+    --panel-blur: on;
+    --blur-amount: 14px;
+    --bg-floating: var(--bg-3);
+
+    /* Panels */
+    --small-user-panel: off;
+    --unrounding: off;
+
+    /* Styling */
+    --custom-spotify-bar: on;
+    --ascii-titles: on;
+    --ascii-loader: system24;
+
+    /* Labels */
+    --panel-labels: on;
+    --label-color: var(--text-muted);
+    --label-font-weight: 500;
+
+    /* Scrollbar */
+    --scrollbar-color: rgba(113, 120, 122, 0.4);
+    --scrollbar-hover: rgba(113, 120, 122, 0.795);
+    --scrollbar-width: 8px;
+
+    /* Billing/Nitro */
+    --billing: none;
+    --boosting: none;
+
+    /* Colors */
+    --colors: on;
+    --background-floating: oklch(18% 0 0 / 1);
+}
+
+/* === COLORS === */
+:root {
+    --text-0: var(--bg-4);
+    --text-1: oklch(95% 0 0);
+    --text-2: oklch(92.797% 0.00011 271.152 / 0.936);
+    --text-3: var(--text-2);
+    --text-4: oklch(88.224% 0.0001 271.152 / 0.678);
+    --text-5: oklch(77.628% 0.00009 271.152 / 0.87);
+
+    --bg-1: oklch(31% 0 0 / 0.65);
+    --bg-2: oklch(27% 0 0 / 0.6);
+    --bg-3: oklch(23% 0 0 / 0.55);
+    --bg-4: oklch(19% 0 0 / 0.5);
+    --hover: oklch(64.673% 0.00007 271.152 / 0.064);
+    --active: oklch(54% 0 0 / 0.2);
+    --active-2: oklch(54% 0 0 / 0.3);
+    --message-hover: var(--hover);
+
+    --accent-1: var(--purple-1);
+    --accent-2: var(--purple-2);
+    --accent-3: var(--purple-3);
+    --accent-4: var(--purple-4);
+    --accent-5: var(--purple-5);
+    --accent-new: var(--red-2);
+
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent);
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent);
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent);
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent);
+
+    --online: var(--green-2);
+    --dnd: var(--red-2);
+    --idle: var(--yellow-2);
+    --streaming: var(--purple-2);
+    --offline: var(--text-4);
+
+    --border-light: var(--hover);
+    --border: var(--active);
+    --border-hover: hsl(220, 0%, 100%, 0.1);
+    --button-border: hsl(220, 0%, 100%, 0.1);
+
+    /* Simplified purple palette */
+    --purple-1: oklch(85.337% 0.27591 140.744);
+    --purple-2: oklch(56.741% 0.00904 217.005);
+    --purple-3: oklch(74.525% 0.00112 13.022);
+    --purple-4: oklch(42.506% 0.00663 17.018);
+    --purple-5: oklch(86.28% 0.14679 204.117);
+}
+
+/* === GENERAL BACKGROUNDS === */
+[class*="authBoxExpanded"],
+[class*="authBox"],
+[class*="settings"],
+[class*="modal"],
+[class*="container"][class*="floating"],
+[class*="popout"],
+[class*="menu"],
+[class*="context"],
+[class*="picker"],
+[class*="inbox"],
+[class*="messagesPopout"],
+[class*="inboxTitle"],
+[class*="content"][class*="thin"] {
+    background-color: oklch(26.862% 0.00003 271.152) !important;
+    backdrop-filter: none !important;
+}
+
+/* Video Grid & Root Transparent */
+[class*="videoGrid"],
+[class*="root"] {
+    background-color: oklch(26.862% 0.00003 271.152 / 0);
+}
+
+/* White Text Normalization */
+[class*="header"], [data-text-variant="text-md/semibold"] {
+    color: #ffffff !important;
+    background-color: transparent !important;
+}
+
+/* Mentions */
+.mention.interactive {
+    color: var(--purple-1) !important;
+    background-color: #83838348 !important;
+}
+.mention.interactive:hover,
+[class*="message-"]:hover .mention.interactive {
+    text-decoration: underline !important;
+    background-color: #8080807e !important;
+}
+
+/* Scrollbars - simplified and grouped */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb {
+    background-color: #5f5f5f !important;
+    border-radius: 35px !important;
+    border: 2px solid transparent !important;
+    background-clip: padding-box !important;
+}
+::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:active { background-color: #7c7c7c !important; }
+::-webkit-scrollbar-track { background: transparent !important; }
+
+/* Hidden Scrollbars for certain containers */
+[class*="guilds_"]::-webkit-scrollbar,
+[class*="unreadMentionsIndicator_"] + [class*="scroller_"]::-webkit-scrollbar,
+.ef3116c2da186559-scroller::-webkit-scrollbar,
+[class*="scrollerBase"]:has(.vc-shc-container):not(:has([class*="video"])):not(:has([class*="callContainer"]))::-webkit-scrollbar {
+    width: 0 !important;
+    display: none !important;
+}
+
+/* Autocomplete Background */
+._084343c4f11eaaab-contentWrapper,
+._13533e3c5791980f-autocompleteInner, 
+.d1405bf11dcfb07a-wrapper {
+    background-color: oklch(26.862% 0.00003 271.152) !important;
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+}
+
+/* Anti-Nitro Cleanup */
+[aria-label*="Geschenk"], [href="/store"], div[class*="upsell"], div[class*="premium"], div[class*="NitroUpsell"] { display: none !important; }
+
+/* Buttons transparent */
+._740174f3d6a2c8fe-buttonContainer, .expression-picker-chat-input-button, ._740174f3d6a2c8fe-button { background: transparent !important; box-shadow: none !important; }
