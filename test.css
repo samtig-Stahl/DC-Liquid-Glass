@@ -266,18 +266,28 @@ body {
     animation: serverPulse 1.2s infinite ease-in-out;
 }
 
-/* Snappy Modal-Übergänge */
-._8a031a135bfcb9ba-container,
-[class*="modalContent"],
-[class*="modalContentInner"] {
-    /* 0.05s bis 0.1s ist der Bereich für 'Snappy' */
-    transition: transform 0.08s cubic-bezier(0.2, 0, 0, 1) !important;
-    transition-property: transform, opacity !important;
+/* Verhindert das unschöne "Reinfliegen" von unten */
+.e4491282b6a5364a-modal {
+    transform: scale(1) !important; /* Fixiert die Größe sofort */
+    opacity: 1 !important;
 }
 
-/* Entferne das Erstarren der Opacity beim Schließen */
-[class*="layer-"] {
-    transition: opacity 0.1s ease-out !important;
+/* Der eigentliche Container: Schnell und direkt */
+._8a031a135bfcb9ba-container {
+    animation: snappy-entry 0.1s cubic-bezier(0.2, 0, 0, 1) !important;
+    transition: opacity 0.1s ease !important;
+}
+
+/* Eigene kleine Animation für einen sauberen Start */
+@keyframes snappy-entry {
+    0% {
+        opacity: 0;
+        transform: scale(0.98); /* Startet nur ganz leicht kleiner */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 [class*="_6131ab3dbe0affed-scroller d125d22cdfd32cfe-auto d125d22cdfd32cfe-scrollerBase"]
