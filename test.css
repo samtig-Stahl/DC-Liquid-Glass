@@ -268,37 +268,47 @@ body {
 
 
 
-/* 1. Öffnen: Sofort da, ohne Animation */
+
+
+
+
+
+
+
+/* 1. DAS FENSTER: Sofortiges Erscheinen ohne Animation */
+._8a031a135bfcb9ba-container,
+.e4491282b6a5364a-modal,
 [class*="layer-"] {
     animation: none !important;
-    /* Transition NUR für Opacity zulassen, damit es beim Schließen faden kann */
-    transition: opacity 0.1s ease-out !important; 
-}
-
-/* 2. Modal-Container fixieren */
-._8a031a135bfcb9ba-container,
-.e4491282b6a5364a-modal {
-    animation: none !important;
     transform: none !important;
+    /* transition: none beim Erscheinen, damit es nicht hakt */
     transition: none !important;
 }
 
-/* 3. WICHTIG: Erlaubt das Verschwinden! */
-/* Wenn Discord den Layer auf opacity 0 setzt, erzwingen wir KEINE 1 mehr */
-[class*="layer-"][style*="opacity: 0"] {
-    opacity: 0 !important;
-    visibility: hidden !important;
-}
-
-/* 4. Hintergrund (Backdrop) - Sofort da, aber blendet beim Schließen aus */
+/* 2. DER HINTERGRUND (Backdrop): Schneller Fade beim Öffnen und Schließen */
 [class*="backdrop-"] {
     animation: none !important;
+    /* 0.08s ist extrem schnell, aber noch weich */
+    transition: opacity 0.08s ease-out !important;
+}
+
+/* 3. DAS SCHLIESSEN: Snappy Fade für das Fenster beim Gehen */
+/* Wir erlauben die Transition nur, wenn Discord den Layer zum Schließen vorbereitet */
+[class*="layer-"][style*="opacity: 0"],
+[class*="layer-"][style*="opacity: 0"] ._8a031a135bfcb9ba-container {
+    opacity: 0 !important;
+    visibility: hidden !important;
     transition: opacity 0.1s ease-out !important;
 }
 
-/* 5. Fix für den Inhalt */
-.e4491282b6a5364a-modalContent {
-    transition: none !important;
+/* 4. Fix: Damit das Fenster beim Schließen nicht sofort hart wegploppt */
+[class*="layer-"] {
+    transition: opacity 0.1s ease-out !important;
+}
+
+/* Sicherstellen, dass die Opacity beim Öffnen sofort auf 1 ist */
+[class*="layer-"]:not([style*="opacity: 0"]) {
+    opacity: 1 !important;
 }
 
 
