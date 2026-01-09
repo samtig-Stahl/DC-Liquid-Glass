@@ -266,24 +266,31 @@ body {
     animation: serverPulse 1.2s infinite ease-in-out;
 }
 
-/* 1. Animationen beim Öffnen komplett abschalten */
-._8a031a135bfcb9ba-container, 
+/* 1. Jede Form von Bewegung oder Zeitverzögerung sofort killen */
+._8a031a135bfcb9ba-container,
 .e4491282b6a5364a-modal,
 [class*="layer-"] {
     animation: none !important;
+    transition: none !important;
     transform: none !important;
-    transition: none !important;
 }
 
-/* 2. Sicherstellen, dass es sofort voll sichtbar ist */
-.e4491282b6a5364a-modal {
+/* 2. Die Opacity auf 1 fixieren, bevor Discord überhaupt "rechnen" kann */
+[class*="layer-"] {
     opacity: 1 !important;
+    visibility: visible !important;
 }
 
-/* 3. Den Hintergrund (Backdrop) ebenfalls snappy machen */
+/* 3. Den Hintergrund-Layer (das Dunkle) ebenfalls sofort erscheinen lassen */
 [class*="backdrop-"] {
+    animation: none !important;
     transition: none !important;
-    opacity: 0.85 !important; /* Standard-Abdunkelung, aber ohne Faden */
+    opacity: 0.85 !important;
+}
+
+/* 4. Verhindert das "Zucken" der Größe beim Laden */
+.e4491282b6a5364a-modalContent {
+    transition: none !important;
 }
 
 [class*="_6131ab3dbe0affed-scroller d125d22cdfd32cfe-auto d125d22cdfd32cfe-scrollerBase"]
