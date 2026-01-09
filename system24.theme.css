@@ -2,7 +2,6 @@
 @import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/1.css');
 @import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/search.css');
 @import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/startup.css');
-@import url("https://aushevahmad.github.io/awesome-css/modules/vc-membercount.css");
 @import url("https://raw.githubusercontent.com/tom22k/discord-css/main/Themes/HideNitroUpsellV2.css");
 
 
@@ -171,6 +170,14 @@ body {
     /* yes, I want to see it -> --boosting: block !important; */
     /* no, hide it -> --boosting: none; */
     --boosting: none;
+
+
+
+    --scrollbar-color: rgba(113, 120, 122, 0.4); /* Dein Grau - Standard */
+    --scrollbar-hover: rgba(113, 120, 122, 0.795); /* Farbe beim Drüberfahren */
+    --scrollbar-width: 8px;                      /* Gleiche Größe wie Standard */
+
+
 }
 
 
@@ -326,3 +333,52 @@ div:has(> [data-text-variant="text-md/semibold"]) {
     color: #ffffff !important;
     background-color: hsla(0, 0%, 94%, 0) !important;
 }
+
+
+.mention.interactive {
+    color: oklch(85.337% 0.27591 140.744)!important;               /* Erzwingt weiße Schrift */
+    background-color: #83838348 !important; 
+}
+
+/* Mentions beim Hovern: Unterstreichen UND Text weiß lassen */
+.mention.interactive:hover {
+    color: oklch(85.337% 0.27591 140.744)!important;               /* Erzwingt weiße Schrift */
+    text-decoration: underline !important;   /* Unterstreicht den Namen */
+    background-color: #8080807e !important; 
+}
+
+/* Falls die Mention in einer Nachricht steht, die gerade gehovered wird */
+[class*="message-"]:hover .mention.interactive {
+    color: oklch(85.337% 0.27591 140.744)!important;
+}
+
+
+/* Den "Was anderem" Hintergrund überschreiben (Beispiel: Nachrichten-Hintergrund) */
+[class*="message-"]:hover {
+    /* Hier kannst du den grauen Standard-Hover von Discord mit deinem Wunsch-Hintergrund überschreiben */
+    background-color: #8080807e !important;  
+    transition: background-color 0.01s ease;
+}
+
+
+
+/* Der Haupt-Hintergrund des Autocomplete-Fensters */
+._084343c4f11eaaab-contentWrapper,
+._13533e3c5791980f-autocompleteInner, 
+.d1405bf11dcfb07a-wrapper {
+    background-color: oklch(26.862% 0.00003 271.152) !important;
+    backdrop-filter: blur(4px); /* Optional: macht den Hintergrund leicht verschwommen */
+    border-radius: 8px; /* Sorgt für abgerundete Ecken */
+}
+
+.affa7e120767dd82-scroller {
+    background: transparent !important;
+}
+
+
+
+.vc-shc-allowed-users-and-roles-container {
+background-color: rgba(255, 2, 2, 0);
+
+}
+
