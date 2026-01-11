@@ -528,3 +528,8 @@ div[class*="premium"] {
     background-color: oklch(26.862% 0.00003 271.152) !important;
     color: white !important; /* Textfarbe auf Weiß setzen, falls der Hintergrund dunkel ist */
 }
+
+/* Call rundung */
+.cb9592ad77576717-wrapper {
+    border-radius: 60px !important;
+}
