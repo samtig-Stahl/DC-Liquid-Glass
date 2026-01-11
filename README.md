@@ -21,12 +21,12 @@ Bevor du mit der Installation beginnst, stelle sicher, dass du **Vencord** auf d
 
    Lade die neueste Version von **DC Liquid Glass** herunter:
 
-   - Gehe auf die [Releases-Seite](https://github.com/samtig-Stahl/DC-Liquid-Glass/releases) und lade die `system.32-one.css`-Datei herunter.
+   - Gehe auf die [Releases-Seite](https://github.com/samtig-Stahl/DC-Liquid-Glass/releases) und lade die `system32.css`-Datei herunter.
 
 2. **CSS in Vencord hinzufügen**
 
    - Öffne Vencord und gehe zu den Einstellungen.
-   - Navigiere zu **"Themes"** und lade die heruntergeladene `system.32-one.css`-Datei in den Themes Ordner.
+   - Navigiere zu **"Themes"** und lade die heruntergeladene `system32.css`-Datei in den Themes Ordner.
    - Speichere deine Änderungen und starte Discord neu, um den flüssigglasartigen Effekt zu sehen.
 
 ## Anpassungsoptionen
