@@ -642,6 +642,10 @@ body {
     background-color: oklch(26.862% 0.00003 271.152) !important;
 }
 
+._4e30a003110eaaf1-container{
+    background-color: oklch(26.862% 0.00003 271.152) !important;
+} 
+
 
 /* Haupt-VideoGrid */
 [class*="videoGrid"],
