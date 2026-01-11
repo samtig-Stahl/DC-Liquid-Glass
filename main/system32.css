@@ -1,0 +1,68 @@
+/**
+ * @name system32
+ * @description better than the "bestVencordCssEverMade"!
+ * @author samtig_Stahl
+ * @version 1.2.6
+ * @invite VytHqTKsMV
+ * @website https://info.bountysmp.de 
+ * @source https://github.com/samtig-Stahl
+ * @authorId 1047563480930193538
+*/
+
+
+
+@import url('https://raw.githubusercontent.com/samtig-Stahl/DC-Liquid-Glass/refs/heads/main/main/system.23-one.css');
+
+body {
+    /* background image options */
+    --background-image: on; /* off: no background image, on: enable background image (must set url variable below) */
+    --background-image-url: url(''); /* url of the background image (dierekter bild link must end with .png, .jpg...)*/
+
+/*Example Images
+
+https://github.com/samtig-Stahl/DC-Liquid-Glass/blob/main/back.png?raw=true
+https://github.com/samtig-Stahl/DC-Liquid-Glass/blob/main/rog.jpg?raw=true
+https://i.imgur.com/49UveZf.jpeg
+https://i.imgur.com/SienWWe.jpeg
+https://i.imgur.com/XPdjuFS.png
+(or just any imgur link xD )
+
+If your link is not imgur or github you have to trust the domain in the Themes tab!!!
+like https://cdn.pixabay.com/photo/2019/12/17/17/58/night-4702174_1280.jpg
+*/
+
+
+    /* font, change to '' for default discord font */
+    --font: 'DM Mono'; /* change to '' for default discord font */
+    --code-font: 'DM Mono'; /* change to '' for default discord font */
+    font-weight: 300; /* text font weight. 300 is light, 400 is normal. DOES NOT AFFECT BOLD TEXT */
+    letter-spacing: -0.05ch; /* decreases letter spacing for better readability. recommended on monospace fonts.*/
+
+    /* animation/transition options */
+    --animations: on; /* off: disable animations/transitions, on: enable animations/transitions */
+    --list-item-transition: 0.2s ease; /* transition for list items */
+    --dms-icon-svg-transition: 0.4s ease; /* transition for the dms icon */
+
+    /* window controls */
+    --custom-window-controls: off; /* off: default window controls, on: custom window controls */
+    --window-control-size: 14px; /* size of custom window controls */
+
+    /* other options */
+    --small-user-panel: off; /* off: default user panel, on: smaller user panel like in old discord */
+
+    /* unrounding options */
+    --unrounding: off; /* off: default, on: remove rounded corners from panels */
+
+
+       /* panel labels */
+    --panel-labels: off; /* off: default, on: add labels to panels */
+    --label-color: oklch(90.67% 0.0001 271.152); /* color of labels */
+}
+
+/* color options */
+:root {
+    --colors: on; /* off: discord default colors, on: midnight custom colors */
+
+}
+
+
