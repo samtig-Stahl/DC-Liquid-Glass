@@ -985,3 +985,34 @@ background-color: rgba(255, 2, 2, 0);
     will-change: transform;
     contain: content;
 }
+
+
+/* text tooo long nitro start */
+._3ec704473ec6c7bf-root{
+    background-color: oklch(26.862% 0.00003 271.152) !important;
+    padding-top: 50px;
+}
+._3ec704473ec6c7bf-subHeader
+.edefb8e22d63c542-anchor,
+._3ec704473ec6c7bf-art,
+._6a443ac3b8a8970b-shinyButton{
+    display: none !important;
+}
+._3ec704473ec6c7bf-header{
+   color: oklch(46.916% 0.18154 27.995);
+}
+._3ec704473ec6c7bf-secondaryAction{
+    background-color: #008545 !important;
+    color: rgb(255, 255, 255) !important;
+}
+._3ec704473ec6c7bf-secondaryAction:hover{
+    background-color: #004825 !important;
+    text-decoration: none !important;
+}
+._201d5e8a3c09670a-contents{
+        all:unset !important;
+
+}
+/* text tooo long nitro end */
+
+
