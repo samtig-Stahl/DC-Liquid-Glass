@@ -624,7 +624,9 @@ body {
 [class*="e131a99484292a19-noiseCancellationPopout"],
 [class*="modal"],
 [class*="container"][class*="floating"],
+/*
 [class*="popout"],
+*/
 [class*="menu"],
 [class*="context"],
 [class*="picker"],
