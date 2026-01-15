@@ -1015,5 +1015,9 @@ background-color: rgba(255, 2, 2, 0);
 
 }
 /* text tooo long nitro end */
+/* Close bttn */
+.c38106a3f0c3ca76-winButtonClose:hover{
+ background-color: rgba(224, 0, 0, 0.806) !important;
+}
 
 
