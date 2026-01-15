@@ -640,7 +640,7 @@ body {
     backdrop-filter: none !important;
 } 
 
-#vc-notification-container {
+.vc-notification-container {
     background-color: oklch(26.862% 0.00003 271.152) !important;
 }
 
@@ -696,9 +696,8 @@ body {
 
 
 [class*="_6131ab3dbe0affed-scroller d125d22cdfd32cfe-auto d125d22cdfd32cfe-scrollerBase"]
-    {background-color: oklch(26.862% 0.00003 271.152); /* dunkler, undurchsichtiger Hintergrund */
-    opacity: 1 !important;               /* keine Transparenz zulassen */
-
+    {background-color: oklch(26.862% 0.00003 271.152); 
+    opacity: 1 !important;             
 }
 
 
@@ -725,9 +724,9 @@ div.cf48127484dbde85-text-sm\/medium {
 ._6e9f8dce4cc18de3-wrapper {
     transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
                 border-radius 0.2s ease, 
-                box-shadow 0.2s ease; /* Anstatt 'all' */
-    will-change: transform; /* Sagt der GPU: Bereite dich auf Bewegung vor */
-    transform: translateZ(0); /* Erzwingt Hardware-Beschleunigung */
+                box-shadow 0.2s ease;
+    will-change: transform; 
+    transform: translateZ(0);
 }
 
 
@@ -764,8 +763,6 @@ div.cf48127484dbde85-text-sm\/medium {
     transform: scale(1.05); 
 }
 
-
-/* Macht den Text "Du hast die Wiedergabe..." weiß */
 [data-text-variant="text-md/semibold"][class*="header"] {
     color: #ffffff !important;
     background-color: hsla(0, 0%, 94%, 0) !important;
